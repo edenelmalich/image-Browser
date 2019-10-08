@@ -1,5 +1,6 @@
 # imagebrowser
-
+Image browser project with flicker api.
+Using: Vue.js,TypeScript,Css 
 ## Project setup
 ```
 npm install
