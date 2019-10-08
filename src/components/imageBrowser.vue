@@ -66,12 +66,12 @@ export default Vue.extend({
           console.log("Error", error);
         });
     },
-    OpenModal: function(url_n) {
+    OpenModal: function(Imageurl) {
       if (this.modal) {
         this.modal = false;
       } else {
         this.modal = true;
-        this.UrlModal = url_n;
+        this.UrlModal = Imageurl;
       }
     }
   },
