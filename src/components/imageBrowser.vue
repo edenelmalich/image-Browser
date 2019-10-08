@@ -9,7 +9,7 @@
     </div>
     <div class="Container-images">
       <div v-for="image in images" v-bind:key="image.id">
-        <a>
+        <a href="#">
           <img
             class="image-box"
             :src="image.url_n"
