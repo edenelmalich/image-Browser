@@ -20,7 +20,7 @@
       </div>
       <div v-if="modal" class="Modal-Container">
         <div @click.prevent="modal=false" class="CloseModal">+</div>
-        <div class="Moda-box">
+        <div @click.prevent="modal=false" class="Moda-box">
           <img :src="UrlModal" />
         </div>
       </div>
