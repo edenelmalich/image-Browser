@@ -44,7 +44,7 @@ export default Vue.extend({
   },
   methods: {
     // This function call to the server to get the images with axios
-    getImages() {
+    getImages: function() {
       return axios({
         method: "get",
         url: "https://api.flickr.com/services/rest",
@@ -66,12 +66,12 @@ export default Vue.extend({
           console.log("Error", error);
         });
     },
-    OpenModal(imageUrl) {
+    OpenModal: function(url_n) {
       if (this.modal) {
         this.modal = false;
       } else {
         this.modal = true;
-        this.UrlModal = imageUrl;
+        this.UrlModal = url_n;
       }
     }
   },
