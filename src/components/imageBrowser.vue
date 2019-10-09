@@ -66,6 +66,7 @@ export default Vue.extend({
           console.log("Error", error);
         });
     },
+    // This function change the modal state and put the url in the UrlModal state
     OpenModal: function(Imageurl) {
       if (this.modal) {
         this.modal = false;
