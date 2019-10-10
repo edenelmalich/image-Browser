@@ -84,7 +84,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-// This Css for Modal images
 .Moda-box {
   position: absolute;
   width: 300px;
