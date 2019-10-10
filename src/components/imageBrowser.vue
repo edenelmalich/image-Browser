@@ -76,6 +76,7 @@ export default Vue.extend({
       }
     }
   },
+  // This function connect the flicker server and push the images in images state.
   created() {
     this.getImages();
   }
