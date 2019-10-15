@@ -81,5 +81,20 @@
         "babelConfig": true
       }
     }
-  }
+  },
+  "description": "Image browser project with flicker api.\r Using: Vue.js,TypeScript,Css \r ## Project setup\r ```\r npm install\r ```",
+  "main": "babel.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edenelmalich/image-Browser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edenelmalich/image-Browser/issues"
+  },
+  "homepage": "https://github.com/edenelmalich/image-Browser#readme"
 }
