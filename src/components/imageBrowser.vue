@@ -82,6 +82,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+// This Css For Modal
 .Moda-box {
   position: absolute;
   width: 300px;
