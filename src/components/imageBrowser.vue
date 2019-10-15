@@ -31,7 +31,6 @@
 <script lang="ts">
 import axios from "axios";
 import { Component, Prop, Vue } from "vue-property-decorator";
-
 export default Vue.extend({
   name: "imageBrowser",
   data() {
@@ -61,7 +60,6 @@ export default Vue.extend({
         .then(res => {
           this.images = res.data.photos.photo;
         })
-
         .catch(error => {
           console.log("Error", error);
         });
@@ -114,4 +112,3 @@ export default Vue.extend({
   cursor: pointer;
 }
 </style>
-
