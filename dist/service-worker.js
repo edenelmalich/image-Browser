@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.71693f299806f780a4b3190c97431185.js"
+  "/precache-manifest.07cee4b051eeac271e437e8a0f97da85.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "imagebrowser"});
