@@ -5,7 +5,7 @@
     </header>
     <div class="Search-att">
       <input type="text" placeholder="Search Image..." v-model="tag" />
-      <input type="submit" @click.prevent="getImages" value="Search" />
+      <b-button type="submit" @click.prevent="getImages" variant="dark">Search</b-button>
     </div>
     <div
       class="Container-images"
@@ -19,7 +19,7 @@
             class="image-box"
             :src="image.url_n"
             :alt="image.title"
-            @click.prevent="OpenModal(image.url_n)"
+            @click.prevent="openModal(image.url_n)"
           />
         </a>
       </div>
@@ -36,6 +36,12 @@
 <script lang="ts">
 import axios from "axios";
 import { Component, Prop, Vue } from "vue-property-decorator";
+import { BButton } from "bootstrap-vue";
+Vue.component("imageBrowser", {
+  components: {
+    "b-button": BButton
+  }
+});
 export default Vue.extend({
   name: "imageBrowser",
   data() {
@@ -76,7 +82,7 @@ export default Vue.extend({
       this.images = this.images.concat(res.data.photos.photo);
     },
     // This function change the modal state and put the url in the UrlModal state
-    OpenModal: function(Imageurl) {
+    openModal: function(Imageurl) {
       if (this.modal) {
         this.modal = false;
       } else {

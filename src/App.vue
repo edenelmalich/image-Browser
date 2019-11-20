@@ -69,4 +69,9 @@ header {
   justify-content: center;
   overflow-y: scroll;
 }
+@media only screen and(max-width: 1024px) {
+  .Search-att input[type="text"] {
+    width: auto;
+  }
+}
 </style>
